@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/SrCinque/CinqueRoadmap/issues"
   },
-  "homepage": "https://github.com/SrCinque/CinqueRoadmap#readme"
+  "homepage": "https://github.com/SrCinque/CinqueRoadmap#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
 }
