@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: rgb(200, 200, 200);
+    text-align: center;
+}
+
+.tarefas{
+    margin: 10px 10%;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: white;
+    width: 80%;
+   
+    
+
+}

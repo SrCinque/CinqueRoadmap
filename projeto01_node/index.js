@@ -1,7 +1,14 @@
 const express = require('express');
 const path = require('path');
 const app = express();
+const bodyParser = require('body-parser')
 
+//Definindo instancia do Body Parser
+
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({
+    extended: true
+}))
 
 // Definindo para a Engine que rode com HTML
 app.engine('html', require('ejs').renderFile);
@@ -14,6 +21,12 @@ var tarefas = ['Task1','Task2','Task3'];
 
 app.get('/', (req, res) => {
 
+    res.render('index',{tasks: tarefas})
+
+})
+
+app.post('/', (req, res)=>{
+    tarefas.push(req.body.task)
     res.render('index',{tasks: tarefas})
 
 })
